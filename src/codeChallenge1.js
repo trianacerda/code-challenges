@@ -5,20 +5,31 @@ export function stringItUp(arr) {
   return arr.map((num) => num.toString());
 }
 
-// STUCK ON CAPS FOR FIRST LETER*********
+export function capitalizeNames(str) {
+  return str.map((str) => {
+    const lowerCase = str.toLowerCase();
+    const capNames = lowerCase.charAt(0).toUpperCase() + lowerCase.slice(1);
+    return capNames;
+  });
+}
 
-// export function capitalizeNames(string) => {
-//   const wordsArray = string.split(" ");
-//   const convertedWordsArray = wordsArray.map((word) => {
-//     return capitalizeNames(word);
-// });
+export function onlyNames(arr) {
+  return arr.map((item) => {
+    return item.name;
+  });
+}
 
-//   return convertedWordsArray.join(" ");
-// }
-
-// from Simon
-// const newArr = arr.map(
-//     (string) => string.charAt(0).toUpperCase() + string.split()
-//   );
-//   return newArr.join(" ");
-// }
+export function makeStrings(arr) {
+  return arr.map((arr) => {
+    if (arr.age >= 18) {
+      return arr.name + " can go to The Matrix";
+    }
+    return arr.name + " is under age!!";
+  });
+}
+export function readyToPutInTheDOM(arr) {
+  return arr.map((item) => {
+    const answer = `<h1>${item.name}</h1><h2>${item.age}</h2>`;
+    return answer;
+  });
+}
