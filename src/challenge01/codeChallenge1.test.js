@@ -121,5 +121,5 @@ test("readyToPutInTheDOM", () => {
     "<h1>Paris Hilton</h1><h2>5</h2>",
     "<h1>Kayne West</h1><h2>16</h2>",
     "<h1>Bob Ziroll</h1><h2>100</h2>",
-  ]); // assert
+  ]); // asser
 });
