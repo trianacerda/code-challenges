@@ -1,9 +1,10 @@
 export function fiveAndGreaterOnly(arr) {
-    return arr.filter((num) => {
-       if (num >= 5) {
-           return num;
-       }
-    })
+    return arr.filter((num) => num >= 5);
+    // {
+    //    if (num >= 5) {
+    //        return num;
+    //    }
+    // })
 }
 
 export function evenOnly(arr) {
@@ -18,17 +19,19 @@ export function fiveCharactersOrFewerOnly(arr) {
   }
 
   export function peopleWhoBelongToTheIlluminati(arr){
-   return arr.filter((ppl) => {
-       if (ppl.member === true)
-       return ppl;
-   });
+   return arr.filter((ppl) => ppl.member === true);
+  //  {
+  //      if (ppl.member === true)
+  //      return ppl;
+  //  });
 }
 
 export function ofAge(arr){
-  return arr.filter((ppl) => {
-      if(ppl.age > 18)
-      return ppl;
-  })
+  return arr.filter((ppl) => ppl.age > 18);
+  // {
+  //     if(ppl.age > 18)
+  //     return ppl;
+  // })
 }
 
 export function leastToGreatest(arr){
