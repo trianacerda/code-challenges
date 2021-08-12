@@ -73,19 +73,19 @@ test('even only', () => {
     expect(output).toEqual(['by', 'dog', 'eaten', 'family', 'wolf']); // assert
   });
 
-  // test('sort by age', () => {
-  //   const input = [
-  //     { name: 'Quiet Samurai', age: 22 },
-  //     { name: 'Arrogant Ambassador', age: 100 },
-  //     { name: 'Misunderstood Observer', age: 2 },
-  //     { name: 'Unlucky Swami', age: 77 }
-  // ]; // arrange
-  //   const output = byAge(input); // act
-  //   expect(output).toEqual( [ 
-  //     { name: 'Misunderstood Observer', age: 2 },
-  //     { name: 'Quiet Samurai', age: 22 },
-  //     { name: 'Unlucky Swami', age: 77 },
-  //     { name: 'Arrogant Ambassador', age: 100 } 
-  // ]); // assert
-  // });
+  test('sort by age', () => {
+    const input = [
+      { name: 'Quiet Samurai', age: 22 },
+      { name: 'Arrogant Ambassador', age: 100 },
+      { name: 'Misunderstood Observer', age: 2 },
+      { name: 'Unlucky Swami', age: 77 }
+  ]; // arrange
+    const output = byAge(input); // act
+    expect(output).toEqual( [ 
+      { name: 'Misunderstood Observer', age: 2 },
+      { name: 'Quiet Samurai', age: 22 },
+      { name: 'Unlucky Swami', age: 77 },
+      { name: 'Arrogant Ambassador', age: 100 } 
+  ]); // assert
+  });
  
