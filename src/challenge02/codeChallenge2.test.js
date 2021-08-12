@@ -1,4 +1,4 @@
-import { fiveAndGreaterOnly, evenOnly, fiveCharactersOrFewerOnly, peopleWhoBelongToTheIlluminati, ofAge } from './codeChallenge02';
+import { fiveAndGreaterOnly, evenOnly, fiveCharactersOrFewerOnly, peopleWhoBelongToTheIlluminati, ofAge, leastToGreatest, greatestToLeast } from './codeChallenge02';
 
 test('Five and greater only', () => {
   const input = [3, 6, 8, 2]; // arrange
@@ -49,4 +49,14 @@ test('even only', () => {
   ]); // assert
   });
 
-  
+  test('sort least to greatest', () => {
+    const input = [1, 3, 5, 2, 90, 20]; // arrange
+    const output = leastToGreatest(input); // act
+    expect(output).toEqual([1, 2, 3, 5, 20, 90]); // assert
+  });
+
+  test('sort greatest to least', () => {
+    const input = [1, 3, 5, 2, 90, 20]; // arrange
+    const output = greatestToLeast(input); // act
+    expect(output).toEqual([90, 20, 5, 3, 2, 1]); // assert
+  });
