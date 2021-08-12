@@ -1,4 +1,4 @@
-import { fiveAndGreaterOnly, evenOnly, fiveCharactersOrFewerOnly, peopleWhoBelongToTheIlluminati, ofAge, leastToGreatest, greatestToLeast, lengthSort } from './codeChallenge02';
+import { fiveAndGreaterOnly, evenOnly, fiveCharactersOrFewerOnly, peopleWhoBelongToTheIlluminati, ofAge, leastToGreatest, greatestToLeast, lengthSort, alphabetical, byAge } from './codeChallenge02';
 
 test('Five and greater only', () => {
   const input = [3, 6, 8, 2]; // arrange
@@ -66,3 +66,26 @@ test('even only', () => {
     const output = lengthSort(input); // act
     expect(output).toEqual(['by', 'dog', 'wolf', 'eaten', 'family']); // assert
   });
+
+  test('alphabeticalize array', () => {
+    const input = ['dog', 'wolf', 'by', 'family', 'eaten']; // arrange
+    const output = alphabetical(input); // act
+    expect(output).toEqual(['by', 'dog', 'eaten', 'family', 'wolf']); // assert
+  });
+
+  // test('sort by age', () => {
+  //   const input = [
+  //     { name: 'Quiet Samurai', age: 22 },
+  //     { name: 'Arrogant Ambassador', age: 100 },
+  //     { name: 'Misunderstood Observer', age: 2 },
+  //     { name: 'Unlucky Swami', age: 77 }
+  // ]; // arrange
+  //   const output = byAge(input); // act
+  //   expect(output).toEqual( [ 
+  //     { name: 'Misunderstood Observer', age: 2 },
+  //     { name: 'Quiet Samurai', age: 22 },
+  //     { name: 'Unlucky Swami', age: 77 },
+  //     { name: 'Arrogant Ambassador', age: 100 } 
+  // ]); // assert
+  // });
+ 
