@@ -37,3 +37,9 @@ export function leastToGreatest(arr){
 export function greatestToLeast(arr){
     return arr.sort((a, b) => b - a);
   } 
+
+
+// START WITH LENGTH-SORT
+  export function lengthSort(arr){
+  return arr.sort((a, b) => a.length - b.length);
+  }
