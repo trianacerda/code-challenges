@@ -22,3 +22,10 @@ export function fiveCharactersOrFewerOnly(arr) {
        return ppl;
    });
 }
+
+export function ofAge(arr){
+  return arr.filter((ppl) => {
+      if(ppl.age > 18)
+      return ppl;
+  })
+}

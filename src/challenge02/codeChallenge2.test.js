@@ -1,4 +1,4 @@
-import { fiveAndGreaterOnly, evenOnly, fiveCharactersOrFewerOnly, peopleWhoBelongToTheIlluminati } from './codeChallenge02';
+import { fiveAndGreaterOnly, evenOnly, fiveCharactersOrFewerOnly, peopleWhoBelongToTheIlluminati, ofAge } from './codeChallenge02';
 
 test('Five and greater only', () => {
   const input = [3, 6, 8, 2]; // arrange
@@ -33,3 +33,20 @@ test('even only', () => {
       { name: 'Bob Ziroll', member: true } 
   ]); // assert
   });
+
+  test('of age', () => {
+    const input = [
+      { name: 'Angelina Jolie', age: 80 },
+      { name: 'Eric Jones', age: 2 },
+      { name: 'Paris Hilton', age: 5 },
+      { name: 'Kayne West', age: 16 },
+      { name: 'Bob Ziroll', age: 100 }
+  ]; // arrange
+    const output = ofAge(input); // act
+    expect(output).toEqual([ 
+      { name: 'Angelina Jolie', age: 80 },
+      { name: 'Bob Ziroll', age: 100 } 
+  ]); // assert
+  });
+
+  
