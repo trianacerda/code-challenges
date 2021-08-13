@@ -1,4 +1,4 @@
-import { capitalizeObjectKeys, getFilteredKey, sortedKeys, getArrayOfKeysAndValues, sortedArraysByValuesLength } from './object-keys-entries.js';
+import { capitalizeObjectKeys, getFilteredKey, sortedKeys, getArrayOfKeysAndValues } from './object-keys-entries.js';
 
 test('it capitalizes the keys', () => {
   const dataObject = { name: 'Angelina Jolie', age: 80 }; //arrange
