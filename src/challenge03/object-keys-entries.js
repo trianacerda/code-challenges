@@ -1,28 +1,26 @@
 export function capitalizeObjectKeys(obj) {
-    const objUp = Object.keys(obj);
-    return objUp.map(objUp => 
-        objUp.toUpperCase());
-}
+    return Object.keys(obj).map(objUp => objUp.toUpperCase());
+//     return objUp.map(objUp => 
+//         objUp.toUpperCase());
+ }
 
 export function sortedKeys(obj) {
-    const objSort = Object.keys(obj);
- return objSort.sort((a , b) => a.length - b.length);
+    return Object.keys(obj).sort((a , b) => a.length - b.length);
+//  return objSort.sort((a , b) => a.length - b.length);
 }
 
 export function getFilteredKey(obj) {
-    const objFilter = Object.keys(obj);
-    return objFilter.filter((obj) => obj === objFilter[2] || obj === 'age')
+   return Object.keys(obj).filter((obj) => obj === 'age') ;
+    // return objFilter.filter((obj) => obj === objFilter[2] || obj === 'age')
 }
 
 export function getArrayOfKeysAndValues(obj){
-    const newArray = Object.entries(obj);
-    return newArray;
+    return Object.entries(obj);
+    // return newArray;
 }
 
-// export function sortedArraysByValuesLength(obj) {
-//     const value = obj.map((obj) => obj.get[0];
-//     const objValuesSorted = value.sort(( b , a ) => b.length - a.length);
-//     return Object.entries(objValuesSorted);
-// }
-
+export function sortedArraysByValuesLength(obj) {
+    return Object.entries(obj).sort((a, b) => b[1].length - a[1].length);
+    // return newArray.sort((a, b) => b[1].length - a[1].length);
+}
 
