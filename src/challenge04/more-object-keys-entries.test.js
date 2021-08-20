@@ -1,4 +1,4 @@
-import { getHouses, updateNumbers, totalCharacters, sortByChildren } from './more-object-keys-entries.js';
+import { getHouses, updateNumbers, totalCharacters, sortByChildren, hasChildrenEntries } from './more-object-keys-entries.js';
 test('it gets the names of the houses', () => {
   const characters = [
     {
@@ -105,22 +105,59 @@ test('return the total number of characters in the data array', () => {
 });
 
 // test('will check if the character has children then return a boolean value of either true or false', () => {
+
 //   const characters = [
-//       {
-//         name: 'Eddard',
-//         spouse: 'Catelyn',
-//         children: ['Robb', 'Sansa', 'Arya', 'Bran', 'Rickon'],
-//         house: 'Stark'
-//       },
-//       {
-//         name: 'Euron',
-//         spouse: null,
-//         children: [],
-//         house: 'Greyjoy'
-//       }
-//     ]; //arrange
-// const output = totalCharacters(characters); //act
-// expect(output).toEqual(false || true); //assert
+//     {
+//       name: 'Eddard',
+//       spouse: 'Catelyn',
+//       children: ['Robb', 'Sansa', 'Arya', 'Bran', 'Rickon'],
+//       house: 'Stark'
+//     },
+//     {
+//       name: 'Jon A.',
+//       spouse: 'Lysa',
+//       children: ['Robin'],
+//       house: 'Arryn'
+//     },
+//     {
+//       name: 'Cersei',
+//       spouse: 'Robert',
+//       children: ['Joffrey', 'Myrcella', 'Tommen'],
+//       house: 'Lannister'
+//     },
+//     {
+//       name: 'Daenarys',
+//       spouse: 'Khal Drogo',
+//       children: ['Drogon', 'Rhaegal', 'Viserion'],
+//       house: 'Targaryen'
+//     },
+//     {
+//       name: 'Mace',
+//       spouse: 'Alerie',
+//       children: ['Margaery', 'Loras'],
+//       house: 'Tyrell'
+//     },
+//     {
+//       name: 'Euron',
+//       spouse: null,
+//       children: [],
+//       house: 'Greyjoy'
+//     },
+//     {
+//       name: 'Jon S.',
+//       spouse: null,
+//       children: [],
+//       house: 'Snow'
+//     }
+//   ];
+
+// const character = 'Eddard'; //arrange
+// const output = hasChildrenEntries(characters, character); //act
+// expect(output).toEqual(true);
+
+// const character1 = 'Euron'; //arrange
+// const output2 = hasChildrenEntries(characters, character); //act
+// expect(output2).toEqual(false);//assert
 // });
 
 
