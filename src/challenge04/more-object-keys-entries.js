@@ -19,13 +19,16 @@ export function totalCharacters(arr) {
 // -- my solution was to build a function that mapped through the 'characters' array and deliver a boolean of false if the the arr.children.name was an empty array. If there was anything in the object-- return true.
 
 // export function hasChildrenEntries(arr, character) {
-//     return Object.entries(arr => {
-//         if (arr.characters.name === 'Eddard') {
+//     Object.entries(arr, character).map((arr) => {
+//         (arr.name = character)
+//         if (character.children === []){
+//             return false;
+//         } else {
 //             return true;
+//         }
 //     }
-//         if (arr.characters.name === 'Euron')
-//         return false;
-//     });
+
+//     );
 
 // } 
 
