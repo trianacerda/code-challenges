@@ -107,6 +107,12 @@ test('return the total number of characters in the data array', () => {
 // test('will check if the character has children then return a boolean value of either true or false', () => {
 //   const characters = [
 //       {
+//         name: 'Eddard',
+//         spouse: 'Catelyn',
+//         children: ['Robb', 'Sansa', 'Arya', 'Bran', 'Rickon'],
+//         house: 'Stark'
+//       },
+//       {
 //         name: 'Euron',
 //         spouse: null,
 //         children: [],
@@ -114,7 +120,7 @@ test('return the total number of characters in the data array', () => {
 //       }
 //     ]; //arrange
 // const output = totalCharacters(characters); //act
-// expect(output).toEqual(false); //assert
+// expect(output).toEqual(false || true); //assert
 // });
 
 

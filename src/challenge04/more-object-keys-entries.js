@@ -15,13 +15,16 @@ export function totalCharacters(arr) {
    });
    return total;
 }
+// #4 test- I struggled with the Object.enteries here because I was trying to do a if then with booleans. In the test I wanted to give an output of true || false but was sure it was completely correct. 
+// -- my solution was to build a function that mapped through the 'characters' array and deliver a boolean of false if the the arr.children.name was an empty array. If there was anything in the object-- return true.
 
 // export function hasChildrenEntries(arr, character) {
 //     return Object.entries(arr => {
-//         if (arr.children === []) {
-//         return false;
+//         if (arr.characters.name === 'Eddard') {
+//             return true;
 //     }
-//         return true;
+//         if (arr.characters.name === 'Euron')
+//         return false;
 //     });
 
 // } 
